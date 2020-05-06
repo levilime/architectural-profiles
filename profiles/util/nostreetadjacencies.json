@@ -1,0 +1,123 @@
+{
+    "shapeadjacencies": [
+    {"lhs": "room",
+    "rhs": "street",
+     "type": "routing"
+    },
+    {"lhs": "streetpiece",
+    "rhs": "ground",
+     "type": "construction"
+    },
+    {"lhs": "room",
+    "rhs": "ground",
+     "type": "construction"
+    },
+    {"lhs": "street",
+    "rhs": "ground",
+     "type": "construction"
+    },
+    {"lhs": "room",
+    "rhs": "roof",
+     "type": "construction"
+    },
+    {"lhs": "room",
+    "rhs": "street",
+     "type": "construction"
+    }
+  ],
+    "shapes": [
+    {
+      "id": "roof",
+      "type": [
+        "construction"
+      ],
+      "category": [
+        "roof"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ],
+        "horizontalswap": true
+      }
+    },
+    {
+      "id": "room",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "interior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          3,
+          1,
+          2
+        ],
+        "max": [
+          3,
+          1,
+          2
+        ],
+        "horizontalswap": true
+      }
+    },
+    {
+      "id": "street",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "exterior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          3,
+          1,
+          2
+        ],
+        "max": [
+          3,
+          1,
+          2
+        ],
+        "horizontalswap": true
+      }
+    }
+    ,
+        {
+      "id": "streetpiece",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "exterior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ],
+        "horizontalswap": true
+      }
+    }
+  ]
+}

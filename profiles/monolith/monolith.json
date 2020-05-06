@@ -1,0 +1,38 @@
+{
+  "shapes": [
+    {
+      "id": "room",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "interior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          8,
+          4,
+          8
+        ],
+        "max": [
+          8,
+          4,
+          8
+        ],
+        "horizontalswap": true
+      },
+      "entranceatlevel": [0],
+      "occurence": {
+        "grid": [8,4,8],
+        "amount": [1,99]
+      }
+    }
+  ],
+ "shapeadjacencies": [
+    {"lhs": "room",
+    "rhs": "ground",
+     "type": "construction"
+    }
+  ]
+}

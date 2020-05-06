@@ -1,0 +1,11 @@
+ground = 252
+wall = 246
+torch = 6
+door = 23
+stairs = 17
+glass = 37
+fence = 8
+mud = 96
+wheat = 192
+ladder = 108
+filled = 252

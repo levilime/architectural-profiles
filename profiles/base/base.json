@@ -1,0 +1,312 @@
+{
+  "tiles": [
+    {
+      "id": "void",
+      "categories": [
+        "void"
+      ]
+    },
+    {
+      "id": "flatsurface",
+      "categories": [
+        "routing",
+        "exterior",
+        "built"
+      ]
+    },
+    {
+      "id": "stairs",
+      "categories": [
+        "routing",
+        "exterior",
+        "interior",
+        "built",
+        "elevate"
+      ]
+    },
+        {
+      "id": "void_above_stairs",
+      "categories": [
+        "exterior",
+        "built",
+        "interior",
+        "routing"
+      ]
+    },
+    {
+      "id": "corner",
+      "categories": [
+        "interior",
+        "routing",
+        "built"
+      ]
+    },
+    {
+      "id": "wall",
+      "categories": [
+        "interior",
+        "routing",
+        "wall",
+        "built"
+      ]
+    },
+    {
+      "id": "door",
+      "categories": [
+        "interior",
+        "routing",
+        "door",
+        "built"
+      ]
+    },
+    {
+      "id": "window",
+      "categories": [
+        "interior",
+        "routing",
+        "window",
+        "built"
+      ]
+    },
+    {
+      "id": "inside",
+      "categories": [
+        "interior",
+        "routing",
+        "built"
+      ]
+    },
+        {
+      "id": "roof",
+      "categories": [
+        "roof",
+        "built"
+      ]
+    }
+  ],
+  "adjacency": {
+    "strict_adjacency": {
+      "self": [
+        "void"
+      ],
+"examples": ["goodhouse", "goodhousebigger", "goodhouse2", "moreareahouse1", "roof3", "roof4", "roof5", "roof6",
+        "roof8", "emptyground", "numberofhouses",
+
+        "heuristicspecimen", "heuristicspecimen2", "heuristicspecimen3", "heuristicspecimen4", "heuristicspecimen5", "heuristicspecimen6",
+        "goodhousewithwindowadjacentflatsurface", "mountainnofilled222", "mountainnofilledroof", "filled2x1x2",
+        "filled2x1x2ok", "filled2x1x2moremore", "buildingandroof"
+      , "buildingandroof2floors"],
+      "reflections": ["smallhouse1", "roof1", "roof2", "smallhouse2", "goodhouse", "filled2x1x2ok"],
+      "antireflections": ["badhouse"],
+      "complete_match": [
+
+      ],
+      "edges": [
+
+      ]
+    },
+    "routing": [
+      {
+        "id": "stairs",
+        "paths": [
+          "-z",
+          "y"
+        ],
+                "entrance": [
+          "-z"
+        ]
+      },
+      {
+        "id": "void_above_stairs",
+        "paths": [
+          "-y",
+          "z"
+        ],
+        "entrance": [
+          "z"
+        ]
+      },
+      {
+        "id": "flatsurface",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ],
+        "entrance": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ]
+      },
+      {
+        "id": "door",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ],
+        "entrance": [
+          "-z"
+        ]
+      },
+      {
+        "id": "window",
+        "paths": [
+          "-x",
+          "x",
+          "z"
+        ]
+      },
+      {
+        "id": "wall",
+        "paths": [
+          "-x",
+          "x",
+          "z"
+        ]
+      },
+            {
+        "id": "corner",
+        "paths": [
+          "z",
+          "x"
+        ]
+      },
+      {
+        "id": "inside",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ]
+      },
+      {"id":"roof",
+        "paths": [
+        ]
+      }
+    ],
+    "construction": [
+      {
+        "id": "stairs",
+        "paths": [
+          "-y", "y"
+        ], "entrance": [
+          "-y"
+        ]
+      },
+      {
+        "id": "void_above_stairs",
+        "paths": [
+          "-y"
+        ]
+      },
+            {
+        "id": "flatsurface",
+        "paths": [
+        ],
+        "entrance": [
+          "-y"
+        ]
+      },
+      {
+        "id": "door",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "y"
+        ], "entrance": [
+          "-y"
+        ]
+      },
+      {
+        "id": "window",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "y"
+        ], "entrance": [
+          "-y"
+        ]
+      },
+      {
+        "id": "wall",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "y"
+        ], "entrance": [
+          "-y"
+        ]
+      },
+            {
+        "id": "corner",
+        "paths": [
+          "x",
+          "z",
+          "y"
+        ], "entrance": [
+          "-y"
+        ]
+      },
+      {
+        "id": "inside",
+        "paths": [
+          "y",
+          "x",
+          "z",
+          "-z",
+          "-x"
+        ], "entrance": [
+          "-y"
+        ]
+      },
+      {"id":"roof",
+        "paths": [
+          "-y"
+        ],
+        "entrance": [
+          "-y"
+
+        ]
+      }
+    ]
+  },
+  "empty_tile": "void",
+  "cutoff": [],
+  "allconnected": [
+    {
+    "type": "routing",
+    "category": "routing",
+    "level":1
+  }
+],
+  "blobs": [
+  ],
+  "through": [
+  ],
+  "connectivity": {
+    "directconstruction": {
+      "categories": [
+      ]
+    },
+      "construction": {
+      "categories": [
+
+      ]
+    }
+  },
+  "density": {
+    "void":1,
+    "interior":1
+  },
+  "blobstoside": [
+  ]
+}

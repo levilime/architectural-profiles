@@ -1,0 +1,9 @@
+{
+  "purposefulshapeconnection": [
+    {
+      "shape": "street",
+      "type":"routing",
+      "amount": 2
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "shapeadjacencies": [
+      {"lhs": "room",
+    "rhs": "room",
+     "type": "construction"
+    }
+  ]
+}

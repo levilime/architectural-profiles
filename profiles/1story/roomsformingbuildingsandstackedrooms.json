@@ -1,0 +1,112 @@
+{
+  "shapes": [
+    {
+      "id": "roof",
+      "type": [
+        "construction"
+      ],
+      "category": [
+        "roof"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ],
+        "horizontalswap": true
+      }
+    },
+    {
+      "id": "room",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "interior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          3,
+          1,
+          2
+        ],
+        "max": [
+          3,
+          1,
+          3
+        ],
+        "horizontalswap": true
+      },
+      "pulledbygravity": true,
+      "occurence": {
+        "grid": [8,4,8],
+        "amount": [2, 99]
+      }
+    },
+    {
+      "id": "street",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "exterior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          1,
+          2,
+          1
+        ],
+        "horizontalswap": true
+      }
+    }
+  ],
+    "shapeadjacencies": [
+    {"lhs": "room",
+    "rhs": "street",
+     "type": "routing"
+    },
+    {"lhs": "street",
+    "rhs": "street",
+     "type": "routing"
+    },
+    {"lhs": "room",
+    "rhs": "ground",
+     "type": "construction"
+    },
+    {"lhs": "street",
+    "rhs": "ground",
+     "type": "construction"
+    },
+    {"lhs": "room",
+    "rhs": "roof",
+     "type": "construction"
+    },
+    {"lhs": "room",
+    "rhs": "street",
+     "type": "construction"
+    },
+      {"lhs": "room",
+    "rhs": "room",
+     "type": "routing"
+    },
+    {"lhs": "room",
+    "rhs": "room",
+     "type": "construction"
+    }
+  ]
+}

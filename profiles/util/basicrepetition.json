@@ -1,0 +1,37 @@
+{
+  "activeShapes": ["housestreetensemble"],
+  "shapes": [
+    {
+      "nonatomic": true,
+      "id": "housestreetensemble",
+      "shapes": ["room", "street", "roof"],
+      "closeontypes": ["routing", "construction"],
+      "form": {
+        "type": "box",
+        "min": [
+          4,
+          2,
+          3
+        ],
+        "max": [
+          4,
+          2,
+          3
+        ],
+        "horizontalswap": true
+      }
+    }
+  ],
+  "shapeadjacencies": [
+    {
+      "lhs": "housestreetensemble",
+      "rhs": "housestreetensemble",
+      "type": "routing"
+    },
+    {
+      "lhs": "housestreetensemble",
+      "rhs": "ground",
+      "type": "construction"
+    }
+  ]
+}

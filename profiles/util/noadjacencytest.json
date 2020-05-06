@@ -1,0 +1,18 @@
+{
+  "adjacency": {
+    "strict_adjacency": {
+      "reflections": [
+        "othersmallestplane",
+        "smallestplane",
+        "smallplane"
+      ],
+      "antireflections": [
+        "plane"
+      ],
+      "complete_match": [
+      ],
+      "edges": [
+      ]
+    }
+  }
+}

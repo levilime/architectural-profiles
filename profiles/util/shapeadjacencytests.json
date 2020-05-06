@@ -1,0 +1,17 @@
+{
+  "adjacency": {
+    "strict_adjacency": {
+      "reflections": [
+        "smallesthouse",
+        "properadjacency"
+      ],
+      "antireflections": [
+        "badadjacency"
+      ],
+      "complete_match": [
+      ],
+      "edges": [
+      ]
+    }
+  }
+}

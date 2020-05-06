@@ -1,0 +1,79 @@
+{
+  "shapes": [
+    {
+      "id": "roof",
+      "type": [
+        "construction"
+      ],
+      "category": [
+        "roof"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ],
+        "horizontalswap": true
+      }
+    },
+    {
+      "id": "room",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "interior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          3,
+          2,
+          3
+        ],
+        "max": [
+          3,
+          2,
+          3
+        ],
+        "horizontalswap": true
+      },
+      "occurence": {
+        "grid": [4,4,4],
+        "amount": [1, 99]
+      },
+      "entrances":[1,2],
+      "entranceatlevel": [0]
+    },
+    {
+      "id": "street",
+      "type": [
+        "routing"
+      ],
+      "category": [
+        "exterior"
+      ],
+      "form": {
+        "type": "box",
+        "min": [
+          1,
+          1,
+          1
+        ],
+        "max": [
+          1,
+          1,
+          1
+        ],
+        "horizontalswap": true
+      }
+    }
+  ]
+}

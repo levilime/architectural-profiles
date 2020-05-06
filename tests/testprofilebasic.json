@@ -1,0 +1,319 @@
+{
+  "tiles": [
+    {
+      "id": "void",
+      "categories": [
+        "void"
+      ]
+    },
+    {
+      "id": "filled",
+      "categories": [
+        "filled",
+        "support"
+      ]
+    },
+    {
+      "id": "flatsurface",
+      "categories": [
+        "routing",
+        "exterior",
+        "built"
+      ]
+    },
+    {
+      "id": "stairs",
+      "categories": [
+        "routing",
+        "exterior",
+        "built",
+        "elevate"
+      ]
+    },
+        {
+      "id": "void_above_stairs",
+      "categories": [
+        "exterior",
+        "built"
+      ]
+    },
+    {
+      "id": "corner",
+      "categories": [
+        "interior",
+        "routing",
+        "built"
+      ]
+    },
+    {
+      "id": "wall",
+      "categories": [
+        "interior",
+        "routing",
+        "wall",
+        "built"
+      ]
+    },
+    {
+      "id": "door",
+      "categories": [
+        "interior",
+        "routing",
+        "door",
+        "built"
+      ]
+    },
+    {
+      "id": "window",
+      "categories": [
+        "interior",
+        "routing",
+        "window",
+        "built"
+      ]
+    },
+    {
+      "id": "inside",
+      "categories": [
+        "interior",
+        "routing",
+        "built"
+      ]
+    }
+  ],
+  "adjacency": {
+    "strict_adjacency": {
+      "self": [
+        "void",
+        "filled"
+      ],
+      "examples": ["11"],
+      "reflections": ["11"],
+      "antireflections": [],
+      "exclude_in_examples":
+          {},
+      "complete_match": [
+
+      ],
+      "edges": [
+
+      ]
+    },
+    "routing": [
+      {
+        "id": "stairs",
+        "paths": [
+          "-z",
+          "y"
+        ]
+      },
+      {
+        "id": "void_above_stairs",
+        "paths": [
+          "-y",
+          "z"
+        ]
+      },
+            {
+        "id": "flatsurface",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ]
+      },
+      {
+        "id": "door",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ]
+      },
+      {
+        "id": "window",
+        "paths": [
+          "x",
+          "-x",
+          "z"
+        ]
+      },
+      {
+        "id": "wall",
+        "paths": [
+          "x",
+          "-x",
+          "z"
+        ]
+      },
+            {
+        "id": "corner",
+        "paths": [
+          "-x",
+          "-z"
+        ]
+      },
+      {
+        "id": "inside",
+        "paths": [
+          "x",
+          "-x",
+          "z",
+          "-z"
+        ]
+      }
+    ],
+    "construction": [
+      {
+        "id": "stairs",
+        "paths": [
+          "-y"
+        ]
+      },
+      {
+        "id": "void_above_stairs",
+        "paths": [
+          "-y"
+        ]
+      },
+            {
+        "id": "flatsurface",
+        "paths": [
+          "-y"
+        ]
+      },
+      {
+        "id": "door",
+        "paths": [
+          "x",
+          "-x",
+          "-y",
+          "y"
+        ]
+      },
+      {
+        "id": "window",
+        "paths": [
+          "x",
+          "-x",
+          "-y",
+          "y"
+        ]
+      },
+      {
+        "id": "wall",
+        "paths": [
+          "x",
+          "-x",
+          "-y",
+          "y"
+        ]
+      },
+            {
+        "id": "corner",
+        "paths": [
+          "x",
+          "z",
+          "-y",
+          "y"
+        ]
+      },
+      {
+        "id": "inside",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      },
+            {
+        "id": "filled",
+        "paths": [
+          "-y",
+          "x",
+          "-z",
+          "z",
+          "-x",
+          "y"
+        ]
+      }
+    ],
+    "directconstruction": [
+      {
+        "id": "stairs",
+        "paths": [
+          "-y"
+        ]
+      },
+      {
+        "id": "void_above_stairs",
+        "paths": [
+          "-y"
+        ]
+      },
+            {
+        "id": "flatsurface",
+        "paths": [
+          "-y"
+        ]
+      },
+      {
+        "id": "door",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      },
+      {
+        "id": "window",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      },
+      {
+        "id": "wall",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      },
+            {
+        "id": "corner",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      },
+      {
+        "id": "inside",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      },
+            {
+        "id": "filled",
+        "paths": [
+          "-y",
+          "y"
+        ]
+      }
+    ]
+  },
+  "cutoffcategories": [],
+  "allconnected": [
+],
+  "connectivity": {
+    "directconstruction": {
+      "categories": [
+      ]
+    },
+      "construction": {
+      "categories": [
+
+      ]
+    }
+  }
+}

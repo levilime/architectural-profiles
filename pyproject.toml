@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "architectural-profiles"
+version = "0.1.0"
+description = ""
+authors = ["levilime <levilime@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+deepmerge = "1.1.1"
+matplotlib = "^3.8.3"
+networkx = "^3.2.1"
+numpy = "^1.26.4"
+pillow = "^10.2.0"
+scipy = "^1.12.0"
+py-vox-io = "^0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
